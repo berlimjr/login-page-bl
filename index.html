@@ -6,13 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assents/css/style.css">
     <title>Pagina de Login</title>
+    <script src="assents/javascripts/scripts.js" defer></script>
 </head>
 <body>
     <header class="header">
         <h1 class="title-header"><p id="vagas">Vagas</p> de Emprego</h1>
-        <a class="login-1" href="#">LOGIN</a>
+        <button class="login-1" href="#">LOGIN</button>
     </header>
-    <section></section>
+    <section>
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="header-modal">
+                <h2>Preencha o Formulario</h2>
+                <button id="close-modal">X</button>
+            </div>
+            <div class="modal-body">
+                <label for="name" class="label">NOME:</label>
+                <input type="text" name="name" placeholder="Digite seu nome" required>
+                <label for="email" class="label">EMAIL:</label>
+                <input type="email" name="name" placeholder="Digite seu melhor email" required>
+                <label for="password" class="label">SENHA:</label>
+                <input type="password" name="name" placeholder="Digite sua senha">
+                <label for="notfy" id="notfy">Deseja receber notificações por email?</label>
+                <input type="radio" name="notfy" class="nots"> <span class="s1">SIM</span>
+                <input type="radio" name="notfy" class="nots"> <span class="s1">NÃO</span>
+                <input type="submit" value="enviar" class="enviar">
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <p>&copy; 2023 - Todos os direitos reservados.</p>
     </footer>    
